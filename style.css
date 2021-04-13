@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.8;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Utility classes */
+.container {
+  margin: auto;
+  padding: 5rem 8rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-sedans {
+  background: #e28525;
+  color: #fff;
+}
+
+.bg-suvs {
+  background: #016972;
+  color: #fff;
+}
+
+.bg-luxury {
+  background: #00403f;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background: #fff;
+}
+
+.btn-sedans {
+  color: #e28525;
+}
+
+.btn-sedans:hover {
+  background: #e28525;
+  color: #fff;
+}
+
+.btn-suvs {
+  color: #016972;
+}
+
+.btn-suvs:hover {
+  background: #016972;
+  color: #fff;
+}
+
+.btn-luxury {
+  color: #00403f;
+}
+
+.btn-luxury:hover {
+  background: #00403f;
+  color: #fff;
+}
+
+#box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* max-height: 520px; */
+  border: none;
+}
+
+#box .box-contents {
+  flex: 1;
+  justify-content: center;
+}
+
+#box .sedans {
+  border-radius: 10px 0 0 10px;
+}
+
+#box .luxury {
+  border-radius: 0 10px 10px 0;
+}
+
+#box img {
+  margin-bottom: 2rem;
+}
+
+#box h1 {
+  margin-bottom: 2rem;
+}
+
+#box p {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  #box {
+    flex-direction: column;
+  }
+
+  #box .sedans,
+  #box .luxury {
+    border-radius: 0;
+  }
+
+  #box img {
+    margin-bottom: 1rem;
+  }
+
+  #box h1 {
+    margin-bottom: 1rem;
+  }
+
+  #box p {
+    margin-bottom: 1rem;
+  }
+
+  .p-3 {
+    padding: 2rem;
+  }
+} ;
